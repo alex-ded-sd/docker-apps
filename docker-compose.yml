@@ -1,0 +1,11 @@
+# prettier-ignore
+version: "3"
+
+services:
+  api:
+    image: api
+    ports:
+      - "5000:80"
+    build:
+      context: ./api
+      dockerfile: Dockerfile
